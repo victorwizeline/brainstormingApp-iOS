@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E79143C1213CE5E6189E953 /* Pods_brainstormingapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D1B892289396EF28E4D53C /* Pods_brainstormingapp.framework */; };
 		572580F22012D72200021F61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572580F12012D72200021F61 /* AppDelegate.swift */; };
 		572580F42012D72200021F61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572580F32012D72200021F61 /* ViewController.swift */; };
 		572580F72012D72200021F61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572580F52012D72200021F61 /* Main.storyboard */; };
 		572580F92012D72200021F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 572580F82012D72200021F61 /* Assets.xcassets */; };
 		572580FC2012D72200021F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572580FA2012D72200021F61 /* LaunchScreen.storyboard */; };
+		572581042012D99800021F61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572581032012D99700021F61 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D1B892289396EF28E4D53C /* Pods_brainstormingapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brainstormingapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		572580EE2012D72200021F61 /* brainstormingapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brainstormingapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		572580F12012D72200021F61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		572580F32012D72200021F61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		572580F82012D72200021F61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		572580FB2012D72200021F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		572580FD2012D72200021F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572581032012D99700021F61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63A45A66290B17F689B8493D /* Pods-brainstormingapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainstormingapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-brainstormingapp/Pods-brainstormingapp.release.xcconfig"; sourceTree = "<group>"; };
+		89D1AC878906894546F6906B /* Pods-brainstormingapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brainstormingapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brainstormingapp/Pods-brainstormingapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E79143C1213CE5E6189E953 /* Pods_brainstormingapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				572580F02012D72200021F61 /* brainstormingapp */,
 				572580EF2012D72200021F61 /* Products */,
+				A62D30B4FAF5B566A13A3488 /* Pods */,
+				C0797FE880D93900F70A3BF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		572580F02012D72200021F61 /* brainstormingapp */ = {
 			isa = PBXGroup;
 			children = (
+				572581032012D99700021F61 /* GoogleService-Info.plist */,
 				572580F12012D72200021F61 /* AppDelegate.swift */,
 				572580F32012D72200021F61 /* ViewController.swift */,
 				572580F52012D72200021F61 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = brainstormingapp;
 			sourceTree = "<group>";
 		};
+		A62D30B4FAF5B566A13A3488 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89D1AC878906894546F6906B /* Pods-brainstormingapp.debug.xcconfig */,
+				63A45A66290B17F689B8493D /* Pods-brainstormingapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0797FE880D93900F70A3BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02D1B892289396EF28E4D53C /* Pods_brainstormingapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 572581002012D72200021F61 /* Build configuration list for PBXNativeTarget "brainstormingapp" */;
 			buildPhases = (
+				B4297A30A71DC9310FD262F0 /* [CP] Check Pods Manifest.lock */,
 				572580EA2012D72200021F61 /* Sources */,
 				572580EB2012D72200021F61 /* Frameworks */,
 				572580EC2012D72200021F61 /* Resources */,
+				F9EA6BE981CBA5C15FF7BB70 /* [CP] Embed Pods Frameworks */,
+				1A75B1C94010AD48500D46A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				572580FC2012D72200021F61 /* LaunchScreen.storyboard in Resources */,
+				572581042012D99800021F61 /* GoogleService-Info.plist in Resources */,
 				572580F92012D72200021F61 /* Assets.xcassets in Resources */,
 				572580F72012D72200021F61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A75B1C94010AD48500D46A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brainstormingapp/Pods-brainstormingapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4297A30A71DC9310FD262F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-brainstormingapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9EA6BE981CBA5C15FF7BB70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-brainstormingapp/Pods-brainstormingapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brainstormingapp/Pods-brainstormingapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		572580EA2012D72200021F61 /* Sources */ = {
@@ -272,6 +359,7 @@
 		};
 		572581012012D72200021F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D1AC878906894546F6906B /* Pods-brainstormingapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		572581022012D72200021F61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A45A66290B17F689B8493D /* Pods-brainstormingapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
